@@ -26,7 +26,7 @@ header {
     margin: 10px;
 
     h1 {
-        @include font-basics()
+        @include font-basics();
     }
 }
 
@@ -35,36 +35,38 @@ main {
     background-color: purple;
     border-radius: 5%;
     margin: 10px;
-    display: block;
-    display:inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    
-    
+    justify-content: space-evenly;
+
+
     img {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        // margin-left: auto;
+        // margin-right: auto;
         width: 40%;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     h3 {
-        @include font-basics()
+        @include font-basics();
     }
 
     p {
-        @include font-basics()
+        @include font-basics();
     }
 
-    section{
-        background-color:rgba(68, 2, 68, 0.4);
+    section {
+        background-color: rgba(68, 2, 68, 0.4);
         border-radius: 10%;
-        width:95%;
+        width: 95%;
         margin: 6px;
-        img{
-            padding-top:10px;
+
+        img {
+            padding-top: 10px;
         }
-        h1{
+
+        h1 {
             @include font-basics()
         }
     }
@@ -95,15 +97,22 @@ nav a:hover {
 
 
 /* Tablet */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-
-}
+@media only screen and (min-width: 401px) and (max-width: 960px) {}
 
 /* Desktop */
 @media only screen and (min-width:961px) {
-    article{
-        main{
-            width:100%;
+    header{
+        h1{
+            font-size:50px;
+        }
+    }
+
+    main{
+        h3{
+            font-size: 40px;
+        }
+        p{
+            font-size: 30px;
         }
     }
 }
