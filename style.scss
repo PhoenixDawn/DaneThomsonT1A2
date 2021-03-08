@@ -1,0 +1,109 @@
+@mixin font-basics {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+}
+
+article>* {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: black;
+}
+
+header {
+    background-color: purple;
+    border-radius: 5%;
+    margin: 10px;
+
+    h1 {
+        @include font-basics()
+    }
+}
+
+
+main {
+    background-color: purple;
+    border-radius: 5%;
+    margin: 10px;
+    display: block;
+    display:inline-flex;
+    flex-wrap: wrap;
+    
+    
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        margin-top: 10px;
+    }
+
+    h3 {
+        @include font-basics()
+    }
+
+    p {
+        @include font-basics()
+    }
+
+    section{
+        background-color:rgba(68, 2, 68, 0.4);
+        border-radius: 10%;
+        width:95%;
+        margin: 6px;
+        img{
+            padding-top:10px;
+        }
+        h1{
+            @include font-basics()
+        }
+    }
+}
+
+
+//   NavBar
+nav {
+    height: 85px;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+}
+
+nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    flex: 1;
+}
+
+nav a:hover {
+    background-color: purple;
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+/* Desktop */
+@media only screen and (min-width:961px) {
+    article{
+        main{
+            width:100%;
+        }
+    }
+}
