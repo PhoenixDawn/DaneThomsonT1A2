@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAA;EACH,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;CAEtB;;AAID,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EACpC,AACI,OADG,CACH,GAAG,CAAA;IACC,MAAM,EAAE,KAAK;IACb,KAAK,EAAE,KAAK;GACf",
+    "sources": [
+        "bstyle.scss"
+    ],
+    "names": [],
+    "file": "bstyle.css"
+}

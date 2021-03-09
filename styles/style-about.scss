@@ -1,0 +1,21 @@
+article{
+    flex-direction:column;
+}
+
+@media only screen and (min-width:961px) {
+    article{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        
+    }
+    
+    #reverseAboutMe{
+        flex-direction:row-reverse;
+    }
+
+}
