@@ -4,8 +4,9 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
 // Sets containers to flex
-@mixin container-setup{
+@mixin container-setup {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -44,11 +45,31 @@ main {
     justify-content: center;
     align-content: center;
 
+    // Set image on homepage to change when you hover over it
+    @keyframes changeImage{
+        from{background-image: url(/images/portrait.jpg);}
+        to{background-image: url(/images/portrait2.jpg);}
+    }
+    //Animation for smoother transition 
+    #img {
+        background-image: url(/images/portrait.jpg);
+        display: block;
+        width: 300px;
+        height: 400px;
+        margin-top: 10px;
+        border-radius: 25px;
+        background-size: 300px 400px;
+    }
+
+    #img:hover {
+        animation-name:changeImage;
+        animation-duration:3s;
+    }
 
     img {
         display: block;
         width: 40%;
-        margin-top:10px;
+        margin-top: 10px;
     }
 
     h3 {
@@ -60,7 +81,7 @@ main {
     }
 
     article {
-        display:flex;
+        display: flex;
         align-items: center;
         background-color: rgba(68, 2, 68, 0.4);
         border-radius: 25px;
@@ -77,8 +98,8 @@ main {
     }
 }
 
-footer{
-    color:white;
+footer {
+    color: white;
 }
 
 
@@ -111,21 +132,23 @@ nav a:hover {
 
 /* Desktop */
 @media only screen and (min-width:961px) {
-    header{
-        h1{
-            font-size:50px;
+    header {
+        h1 {
+            font-size: 50px;
         }
     }
 
-    main{
-        h3{
+    main {
+        h3 {
             font-size: 40px;
         }
-        p{
+
+        p {
             font-size: 30px;
         }
-        img{
-            margin-top:20px;
+
+        img {
+            margin-top: 20px;
             border-radius: 25px;
         }
     }

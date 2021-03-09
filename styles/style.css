@@ -55,6 +55,41 @@ main {
       align-content: center;
 }
 
+@-webkit-keyframes changeImage {
+  from {
+    background-image: url(/images/portrait.jpg);
+  }
+  to {
+    background-image: url(/images/portrait2.jpg);
+  }
+}
+
+@keyframes changeImage {
+  from {
+    background-image: url(/images/portrait.jpg);
+  }
+  to {
+    background-image: url(/images/portrait2.jpg);
+  }
+}
+
+main #img {
+  background-image: url(/images/portrait.jpg);
+  display: block;
+  width: 300px;
+  height: 400px;
+  margin-top: 10px;
+  border-radius: 25px;
+  background-size: 300px 400px;
+}
+
+main #img:hover {
+  -webkit-animation-name: changeImage;
+          animation-name: changeImage;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
 main img {
   display: block;
   width: 40%;
