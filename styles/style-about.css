@@ -21,6 +21,12 @@ article {
   article img {
     height: 300px;
     width: 300px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  article ul {
+    padding-left: 0;
   }
   #reverseAboutMe {
     -webkit-box-orient: horizontal;

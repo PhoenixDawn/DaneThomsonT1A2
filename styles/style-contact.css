@@ -54,5 +54,8 @@ section h1 {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  main input {
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style-contact.css.map */
