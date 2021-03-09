@@ -88,6 +88,8 @@ main #img:hover {
           animation-name: changeImage;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 main img {

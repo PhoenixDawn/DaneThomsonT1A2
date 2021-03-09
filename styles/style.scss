@@ -64,6 +64,8 @@ main {
     #img:hover {
         animation-name:changeImage;
         animation-duration:3s;
+        // Stops animation at last frame while hovering
+        animation-fill-mode: forwards;
     }
 
     img {
