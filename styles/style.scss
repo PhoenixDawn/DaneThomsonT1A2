@@ -48,17 +48,17 @@ main {
     // Set image on homepage to change when you hover over it
     @keyframes changeImage {
         from {
-            background-image: url("https://github.com/PhoenixDawn/DaneThomsonT1A2/blob/main/images/portrait.jpg?raw=true");
+            background-image: url("../images/portrait.jpg");
         }
 
         to {
-            background-image: url("https://github.com/PhoenixDawn/DaneThomsonT1A2/blob/main/images/portrait2.jpg?raw=true");
+            background-image: url("../images/portrait2.jpg");
         }
     }
 
     //Animation for smoother transition 
     #img {
-        background-image: url("https://github.com/PhoenixDawn/DaneThomsonT1A2/blob/main/images/portrait.jpg?raw=true");
+        background-image: url("../images/portrait.jpg");
         display: block;
         width: 300px;
         height: 400px;
