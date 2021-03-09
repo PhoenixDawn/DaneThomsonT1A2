@@ -46,13 +46,19 @@ main {
     align-content: center;
 
     // Set image on homepage to change when you hover over it
-    @keyframes changeImage{
-        from{background-image: url("https://github.com/PhoenixDawn/DaneThomsonT1A2/blob/main/images/portrait.jpg");}
-        to{background-image: url("https://github.com/PhoenixDawn/DaneThomsonT1A2/blob/main/images/portrait2.jpg");}
+    @keyframes changeImage {
+        from {
+            background-image: url("https://github.com/PhoenixDawn/DaneThomsonT1A2/blob/main/images/portrait.jpg?raw=true");
+        }
+
+        to {
+            background-image: url("https://github.com/PhoenixDawn/DaneThomsonT1A2/blob/main/images/portrait2.jpg?raw=true");
+        }
     }
+
     //Animation for smoother transition 
     #img {
-        background-image: url("https://github.com/PhoenixDawn/DaneThomsonT1A2/blob/main/images/portrait.jpg");
+        background-image: url("https://github.com/PhoenixDawn/DaneThomsonT1A2/blob/main/images/portrait.jpg?raw=true");
         display: block;
         width: 300px;
         height: 400px;
@@ -62,8 +68,8 @@ main {
     }
 
     #img:hover {
-        animation-name:changeImage;
-        animation-duration:3s;
+        animation-name: changeImage;
+        animation-duration: 3s;
         // Stops animation at last frame while hovering
         animation-fill-mode: forwards;
     }

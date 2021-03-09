@@ -57,24 +57,24 @@ main {
 
 @-webkit-keyframes changeImage {
   from {
-    background-image: url(/images/portrait.jpg);
+    background-image: url("https://github.com/PhoenixDawn/DaneThomsonT1A2/blob/main/images/portrait.jpg?raw=true");
   }
   to {
-    background-image: url(/images/portrait2.jpg);
+    background-image: url("https://github.com/PhoenixDawn/DaneThomsonT1A2/blob/main/images/portrait2.jpg?raw=true");
   }
 }
 
 @keyframes changeImage {
   from {
-    background-image: url(/images/portrait.jpg);
+    background-image: url("https://github.com/PhoenixDawn/DaneThomsonT1A2/blob/main/images/portrait.jpg?raw=true");
   }
   to {
-    background-image: url(/images/portrait2.jpg);
+    background-image: url("https://github.com/PhoenixDawn/DaneThomsonT1A2/blob/main/images/portrait2.jpg?raw=true");
   }
 }
 
 main #img {
-  background-image: url(/images/portrait.jpg);
+  background-image: url("https://github.com/PhoenixDawn/DaneThomsonT1A2/blob/main/images/portrait.jpg?raw=true");
   display: block;
   width: 300px;
   height: 400px;
