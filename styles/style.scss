@@ -45,34 +45,24 @@ main {
     justify-content: center;
     align-content: center;
 
-    // Set image on homepage to change when you hover over it
-    @keyframes changeImage {
-        from {
-            background-image: url("../images/portrait.jpg");
-        }
-
-        to {
-            background-image: url("../images/portrait2.jpg");
-        }
-    }
 
     //Animation for smoother transition 
     #img {
-        background-image: url("../images/portrait2.jpg");
-        background-image: url("../images/portrait.jpg");
-        display: block;
-        width: 300px;
-        height: 400px;
-        margin-top: 10px;
-        border-radius: 25px;
-        background-size: 300px 400px;
+        img{
+            display: block;
+            width: 300px;
+            height: 400px;
+            margin-top: 10px;
+            border-radius: 25px;
+            background-size: 300px 400px;
+        }
+        img:last-child{display:none}
+
     }
 
     #img:hover {
-        animation-name: changeImage;
-        animation-duration: 3s;
-        // Stops animation at last frame while hovering
-        animation-fill-mode: forwards;
+        img:last-child{display:block}
+        img:first-child{display:none}
     }
 
     img {

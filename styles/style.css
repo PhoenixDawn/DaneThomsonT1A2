@@ -55,27 +55,7 @@ main {
       align-content: center;
 }
 
-@-webkit-keyframes changeImage {
-  from {
-    background-image: url("../images/portrait.jpg");
-  }
-  to {
-    background-image: url("../images/portrait2.jpg");
-  }
-}
-
-@keyframes changeImage {
-  from {
-    background-image: url("../images/portrait.jpg");
-  }
-  to {
-    background-image: url("../images/portrait2.jpg");
-  }
-}
-
-main #img {
-  background-image: url("../images/portrait2.jpg");
-  background-image: url("../images/portrait.jpg");
+main #img img {
   display: block;
   width: 300px;
   height: 400px;
@@ -84,13 +64,16 @@ main #img {
   background-size: 300px 400px;
 }
 
-main #img:hover {
-  -webkit-animation-name: changeImage;
-          animation-name: changeImage;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+main #img img:last-child {
+  display: none;
+}
+
+main #img:hover img:last-child {
+  display: block;
+}
+
+main #img:hover img:first-child {
+  display: none;
 }
 
 main img {
