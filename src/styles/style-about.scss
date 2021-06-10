@@ -1,0 +1,29 @@
+article{
+    flex-direction:column;
+}
+
+@media only screen and (min-width:961px) {
+    article{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            height: 300px;
+            width: 300px;
+            margin-left: 10px;
+            margin-bottom:10px;
+            margin-right: 10px;
+        }
+
+        ul{
+            padding-left:0;
+        }
+        
+    }
+
+    
+    #reverseAboutMe{
+        flex-direction:row-reverse;
+    }
+
+}

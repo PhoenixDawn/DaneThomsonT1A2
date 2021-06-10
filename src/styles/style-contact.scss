@@ -1,0 +1,55 @@
+@mixin font-basics {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main {
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+
+    section{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+
+        label{
+            text-align: center
+        }
+
+    }
+}
+
+section{
+    h1{
+        @include font-basics();
+    }
+}
+
+// Contact Page
+.icon{
+    height:50px;
+    width:50px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 401px) and (max-width: 960px) {}
+
+/* Desktop */
+@media only screen and (min-width:961px) {
+    header{
+        h1{
+            font-size:50px;
+        }
+    }
+
+    main{
+        flex-direction: row;
+        input{
+            margin-bottom:10px;
+        }
+    }
+}
