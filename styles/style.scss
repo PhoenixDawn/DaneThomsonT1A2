@@ -15,11 +15,18 @@
     color: black;
 }
 
-body {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #333;
+.background{
+    display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(68, 2, 68, 0.4);
+        border-radius: 25px;
+        margin: 15px;
+        width
 }
+
+
 
 header {
     @include container-setup();
@@ -84,8 +91,7 @@ main {
         align-items: center;
         background-color: rgba(68, 2, 68, 0.4);
         border-radius: 25px;
-        width: 95%;
-        margin: 6px;
+        margin: 15px;
 
         img {
             padding-top: 10px;
@@ -103,28 +109,33 @@ footer {
 
 
 //   NavBar
-nav {
-    @include container-setup();
-    height: 85px;
-    background-color: #333;
-    overflow: hidden;
-    display: flex;
-}
+// nav {
+//     @include container-setup();
+//     height: 85px;
+//     background-color: #333;
+//     overflow: hidden;
+//     display: flex;
+// }
 
-nav a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    flex: 1;
-}
+// nav a {
+//     float: left;
+//     color: white;
+//     text-align: center;
+//     padding: 14px 16px;
+//     text-decoration: none;
+//     font-size: 17px;
+//     flex: 1;
+// }
 
 nav a:hover {
     background-color: lightskyblue;
 }
 
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+}
 
 /* Tablet */
 @media only screen and (min-width: 401px) and (max-width: 960px) {}
@@ -152,3 +163,4 @@ nav a:hover {
         }
     }
 }
+

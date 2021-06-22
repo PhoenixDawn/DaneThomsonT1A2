@@ -4,48 +4,106 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/bstyle.css">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/bstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <title>Dane Thomson's Porfolio - Previous Projects</title>
   </head>
-  <body>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Previous Projects</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About Me</a>
-      </nav>
-      <header><h1>Previous Projects!</h1></header>
-      <main>
-        <article>
-          <img src="images/Only-Grans.PNG" alt="Only Grans">
-          <h1>Only Grans</h1>
-          <p>Only grans is a two way market place built with Ruby on Rails for Grandma's to sell their baked good to people around Australia</p>
-          <a href="https://github.com/PhoenixDawn/Only-Grans">Only-Grans - Github</a>
-          <br>
-        </article>
-        <article>
-          <img src="images/The-Librarian.PNG" alt="The Librarian">
-          <h1>The Librarian</h1>
-          <p>A ruby terminal app for a librarian to keep track of their books, loan them out and find out when books need to be returned</p>
-          <a href="https://github.com/PhoenixDawn/Ruby-Terminal-App-Librarian">The Librarian - Github</a>
-          <br>
-        </article>
-        <article>
-          <img src="images/A-Snakes-Journey.PNG" alt="A Snakes Journey">
-          <h1>A Snakes Journey</h1>
-          <p>An Android game where you play as a snake and journey through dungeons and collecting all the food and avoiding enemies</p>
-          <a href="https://play.google.com/store/apps/details?id=com.pimpg.snakesjourney&hl=en_US&gl=US">A Snakes Journey - Play store</a>
-          <br>
-        </article>
-        <article>
-          <img src="images/spacex.PNG" alt="Javascript Axios">
-          <h1>Single Page API requests</h1>
-          <p>Using an API update a single page dynamically to first display the names, then when clicked display information on that item</p>
-          <a href="https://github.com/PhoenixDawn/JavascriptAxios">Single Page API - Github</a>
-          <br>
-        </article>
-      </main>
-      <footer>&copy; Copyright 2021 Dane Thomson</footer>
+  <body class="bg-secondary">
+    <nav>
+    <ul class="nav nav-pills nav-fill bg-secondary">
+      <li class="nav-item">
+        <a class="nav-link text-white" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="projects.html">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="contact.html">Contact Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="about.html">About Me</a>
+      </li>
+    </ul>
+  </nav>
+    <header><h1>Previous Projects!</h1></header>
+    <main class="pt-1 pb-1">
+      <article>
+        <img src="images/Only-Grans.PNG" alt="Only Grans" />
+        <h1>Only Grans</h1>
+        <p>
+          Only grans is a two way market place built with Ruby on Rails for
+          Grandma's to sell their baked good to people around Australia
+        </p>
+        <div>
+          <a
+            href="https://github.com/PhoenixDawn/Only-Grans"
+            class="btn btn-primary mb-3 rounded-pill border border-3 mx-2"
+            >Only-Grans - Github</a
+          >
+          <a
+            href="https://onlygrans.herokuapp.com/"
+            class="btn btn-primary mb-3 rounded-pill border border-3 mx-2"
+            >Only-Grans - Deployed Site</a
+          >
+        </div>
+      </article>
+      <article>
+        <img src="images/The-Librarian.PNG" alt="The Librarian" />
+        <h1>The Librarian</h1>
+        <p>
+          A ruby terminal app for a librarian to keep track of their books, loan
+          them out and find out when books need to be returned
+        </p>
+        <div>
+          <a
+            href="https://github.com/PhoenixDawn/Ruby-Terminal-App-Librarian"
+            class="btn btn-primary mb-3 rounded-pill border border-3 mx-2"
+            >The Librarian - Github</a
+          >
+        </div>
+      </article>
+      <article>
+        <img src="images/A-Snakes-Journey.PNG" alt="A Snakes Journey" />
+        <h1>A Snakes Journey</h1>
+        <p>
+          An Android game where you play as a snake and journey through dungeons
+          and collecting all the food and avoiding enemies
+        </p>
+        <div>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.pimpg.snakesjourney&hl=en_US&gl=US"
+            class="btn btn-primary mb-3 rounded-pill border border-3 mx-2"
+            >A Snakes Journey - Play store</a
+          >
+        </div>
+      </article>
+      <article>
+        <img src="images/spacex.PNG" alt="Javascript Axios" />
+        <h1>Single Page API requests</h1>
+        <p>
+          Using an API update a single page dynamically to first display the
+          names, then when clicked display information on that item
+        </p>
+        <div class="mb-3">
+          <a
+            href="https://github.com/PhoenixDawn/JavascriptAxios"
+            class="btn btn-primary rounded-pill border border-3 mx-2"
+            >Single Page API - Github</a
+          >
+          <a
+            href="https://phoenixdawn.github.io/JavascriptAxios/"
+            class="btn btn-primary rounded-pill border border-3 mx-2"
+            >Single Page API - Deployed Site</a
+          >
+        </div>
+      </article>
+    </main>
+    <footer>&copy; Copyright 2021 Dane Thomson</footer>
   </body>
 </html>
