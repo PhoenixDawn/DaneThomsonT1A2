@@ -19,7 +19,7 @@
 }
 
 header {
-  width: 100%;
+  width: 97.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +43,7 @@ header h1 {
 }
 
 main {
-  width: 100%;
+  width: 97.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,8 +59,6 @@ main {
   border-radius: 25px;
   margin: 10px;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -68,7 +66,7 @@ main {
 
 main #img img {
   display: block;
-  width: 300px;
+  width: 97.5%;
   height: 400px;
   margin-top: 10px;
   border-radius: 25px;
@@ -90,7 +88,6 @@ main #img:hover img:first-child {
 main img {
   display: block;
   width: 40%;
-  margin-top: 10px;
 }
 
 main h3 {
@@ -127,24 +124,47 @@ main article h1 {
   padding-right: 10px;
 }
 
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.button {
+  margin: 5px;
+}
+
 footer {
+  display: block;
   color: white;
+  margin: 0;
+  padding: 1rem;
 }
 
 nav a:hover {
   background-color: lightskyblue;
 }
 
-.body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background-color: #333;
+/* Tablet */
+@media only screen and (min-width: 320px) and (max-width: 960px) {
+  main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow-x: hidden;
+    width: auto;
+  }
+  header {
+    width: auto;
+  }
 }
 
-/* Tablet */
 /* Desktop */
 @media only screen and (min-width: 961px) {
   header h1 {
