@@ -66,9 +66,9 @@ main {
 
 main #img img {
   display: block;
-  width: 97.5%;
+  width: 300px;
   height: 400px;
-  margin-top: 10px;
+  margin: 10px;
   border-radius: 25px;
   background-size: 300px 400px;
 }
@@ -177,7 +177,8 @@ nav a:hover {
     font-size: 30px;
   }
   main img {
-    margin-top: 20px;
+    margin: 20px;
+    width: 300px;
     border-radius: 25px;
   }
 }
