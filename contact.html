@@ -29,6 +29,10 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"
   ></script>
+  <script defer src="script.js"></script>
+  <style>
+    .hide { position:absolute; top:-1px; left:-1px; width:1px; height:1px; }
+  </style>
     <title>Dane Thomson's Porfolio - Contact</title>
   </head>
   <body class="bg-secondary">
@@ -66,32 +70,35 @@
           </div>
       </section>
 
-      <!-- <section>
+
+
+      <section>
+        <iframe name="hiddenFrame" class="hide"></iframe>
         <div class="background">
           <h1>Contact me here!</h1>
-          <form action="https://formsubmit.co/dane.thomson@outlook.com" method="POST">
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfMxx3ZACQudY1j2HXBcFRpCTP3c9NFcB7JjvoPcbpFFqpcpw/formResponse" method="POST" target="hiddenFrame">
             <p id="error" style="color: red;"></p>
 
             <label for="fname">First Name *</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            <input type="text" id="fname" name="entry.112110482" placeholder="Your name.." required>
         
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <input type="text" id="lname" name="entry.1736697125" placeholder="Your last name..">
             
             <label for="email">Email *</label>
-            <input type="text" id="email" name="email" placeholder="Your email.." required>
+            <input type="text" id="email" name="entry.1852555397" placeholder="Your email.." required>
             
             <label for="phone">Phone Number</label>
-            <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+            <input type="text" id="phone" name="entry.1150520339" placeholder="Your phone number..">
         
-            <label for="subject">Subject *</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+            <label for="body">Message *</label>
+            <textarea id="body" name="entry.1339838626" placeholder="Write something.." style="height:200px" required></textarea>
         
             <button id="button">Submit</button>
         
           </form>
         </div>
-      </section> -->
+      </section>
 
 
     </main>
